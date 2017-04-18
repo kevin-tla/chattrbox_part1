@@ -25,7 +25,7 @@ ws.on('connection', function(socket) {
         console.log('message received: ' + data);
         messages.push(data);
         ws.clients.forEach(function(clientSocket) {
-            clientSocket.send(data)
+            clientSocket.send(data);
         });
     });
 });
